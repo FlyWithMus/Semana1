@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio HTML 1:Formulario</title>
+    <meta name="author" content="Jose Alor" />
+  </head>
+
+  <body>
+    <main>
+      <form name="Inscripción" method="get" action="#">
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <p>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" autofocus required />
+          </p>
+
+          <p>
+            <label for="mail">Correo Electrónico:</label>
+            <input type="email" id="mail" name="user_email" required />
+          </p>
+
+          <p>
+            <label for="web">URL:</label>
+            <input
+              type="url"
+              id="web"
+              name="user_web"
+              placeholder="Escribe aquí la Url de tu página web personal"
+            />
+          </p>
+
+          <p>
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="user_tel" value="685948503" />
+          </p>
+
+          <p>
+            <label for="favcolor">Color Favorito:</label>
+            <input type="color" id="favcolor" name="user_favcolor" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Otros datos</legend>
+
+          <p>
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="user_date" />
+          </p>
+
+          <p>
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="user_time" />
+          </p>
+
+          <p>
+            <label for="localdatetime">Fecha y hora:</label>
+            <input
+              type="datetime-local"
+              id="localdatetime"
+              name="user_localdatetime"
+            />
+          </p>
+
+          <p>
+            <label for="month">Mes:</label>
+            <input type="month" id="month" name="user_month" />
+          </p>
+
+          <p>
+            <label for="week">Semana:</label>
+            <input type="week" id="week" name="user_week" />
+          </p>
+
+          <p>
+            <label for="number">Número:</label>
+            <input
+              type="number"
+              id="number"
+              name="user_number"
+              min="-10"
+              max="10"
+            />
+          </p>
+
+          <p>
+            <label for="termsearch">Término de búsqueda:</label>
+            <input
+              type="search"
+              id="termsearch"
+              name="user_termsearch"
+              disabled
+            />
+          </p>
+        </fieldset>
+        <p>
+          <button type="submit">Enviar</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
